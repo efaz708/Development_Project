@@ -69,8 +69,7 @@ static async Task SeedAdminAsync(WebApplication app)
     {
         var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
         var adminEmail = "admin@gmail.com";
-        var adminPassword = "admin£1234";
-
+var adminPassword = Environment.GetEnvironmentVariable("ADMIN_SEED_PASSWORD");
         var existingAdmin = await userManager.FindByEmailAsync(adminEmail);
         if (existingAdmin == null)
         {
@@ -81,8 +80,13 @@ static async Task SeedAdminAsync(WebApplication app)
                 EmailConfirmed = true
             };
 
-            var result = await userManager.CreateAsync(newAdmin, adminPassword);
+            if (string.IsNullOrWhiteSpace(adminPassword))
+{
+    Console.WriteLine("Admin seeding skipped: ADMIN_SEED_PASSWORD is not configured.");
+    return;
+}
 
+var result = await userManager.CreateAsync(newAdmin, adminPassword);
             if (result.Succeeded)
             {
                 Console.WriteLine("✅ Admin user created successfully.");
