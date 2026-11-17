@@ -74,8 +74,111 @@ The project is an academic prototype. Some functionality requires further testin
 
 ## Project Screenshots
 
-Screenshots of the application interface will be added to this repository.
+The following screenshots demonstrate the main features and user interfaces of the BARAFood Restaurant Management System.
 
+### Application Interface
+
+## Application Interface
+
+The following screenshots demonstrate the user interface and key features of BARAFood, an ASP.NET Core MVC restaurant management system with customer-facing functionality and administrator management features.
+
+### 1. Welcome and Authentication
+
+The application provides a landing page and user authentication interfaces for accessing the restaurant management system.
+
+**Welcome Page**
+
+![BARAFood Welcome Page](screenshots/Screenshot%20%281757%29.png)
+
+**User Login**
+
+![BARAFood Login Page](screenshots/Screenshot%20%281758%29.png)
+
+**User Registration**
+
+![BARAFood Registration Page](screenshots/Screenshot%20%281759%29.png)
+
+### 2. Home Page and Restaurant Menu
+
+After logging in, users can navigate the restaurant website, browse menu items and select food and drinks.
+
+**Home Page**
+
+![BARAFood Home Page](screenshots/Screenshot%20%281760%29.png)
+
+**Food Menu**
+
+![BARAFood Food Menu](screenshots/Screenshot%20%281761%29.png)
+
+**Drinks Menu**
+
+![BARAFood Drinks Menu](screenshots/Screenshot%20%281762%29.png)
+
+**Desserts Menu**
+
+![BARAFood Desserts Menu](screenshots/Screenshot%20%281763%29.png)
+
+### 3. Table Reservation System
+
+The reservation interface allows users to enter their contact details, specify the number of guests, choose a date and time, and select a table from the available interface options.
+
+![BARAFood Table Reservation Form](screenshots/Screenshot%20%281764%29.png)
+
+### 4. Customer Shopping Cart
+
+The cart interface provides sections for selected menu items and table reservations.
+
+![BARAFood Customer Cart](screenshots/Screenshot%20%281765%29.png)
+
+### 5. Contact and Restaurant Information
+
+The contact page presents restaurant information, opening hours, management details and a privacy policy section.
+
+![BARAFood Contact Page](screenshots/Screenshot%20%281766%29.png)
+
+### 6. Administrator Interface
+
+The application includes administrator-facing functionality for managing restaurant menu items, viewing customer cart records and managing table reservations.
+
+**Administrator Login**
+
+![BARAFood Administrator Login](screenshots/Screenshot%20%281767%29.png)
+
+**Administrator Menu View**
+
+![BARAFood Administrator Menu Management](screenshots/Screenshot%20%281768%29.png)
+
+### 7. Menu Item Management (CRUD)
+
+The administrator interface includes menu item management pages for viewing, creating, editing and deleting menu records.
+
+**Edit Menu Item**
+
+![BARAFood Edit Menu Item](screenshots/Screenshot%20%281769%29.png)
+
+**Menu Management List**
+
+![BARAFood Menu Management List](screenshots/Screenshot%20%281770%29.png)
+
+**Menu Item Details**
+
+![BARAFood Menu Item Details](screenshots/Screenshot%20%281771%29.png)
+
+### 8. Administrator Cart and Reservation Management
+
+The administrator interface displays cart items associated with different users, including quantities, prices and actions. It also displays table reservations with customer details and edit/delete controls.
+
+**Administrator Cart Overview**
+
+![BARAFood Administrator Cart Overview](screenshots/Screenshot%20%281772%29.png)
+
+**Administrator Reservation Management**
+
+![BARAFood Administrator Reservation Management](screenshots/Screenshot%20%281773%29.png)
+
+---
+
+*Screenshots captured from the application running locally during development.*
 ## Author
 
 Md Jobaer Hasan Efaz
