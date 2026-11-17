@@ -19,8 +19,12 @@ namespace RestaurantManagementSystem.Data
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
                 var adminEmail = "admin@gmail.com";
-                var adminPassword = "Admin@1234"; 
-
+                var adminPassword = Environment.GetEnvironmentVariable("ADMIN_SEED_PASSWORD");
+                if (string.IsNullOrWhiteSpace(adminPassword))
+                {
+                    Console.WriteLine("Admin seeding skipped: password not configured.");
+                    return;
+                }
 
                 // ✅ Create role if it doesn't exist
                 if (!await roleManager.RoleExistsAsync("Admin"))
